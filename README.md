@@ -61,3 +61,65 @@
 - โค้ดนี้ไม่ได้มีไว้เพื่อการจำหน่าย
 - ผู้ใดที่นำโค้ดนี้ไปจำหน่ายโดยไม่ได้รับอนุญาต จะถูกดำเนินคดีตามกฎหมาย
 ---
+
+
+
+#### English
+# PNW Realtime-ZK (No DB - LINE Notify)
+
+## Description
+This program retrieves real-time fingerprint scan data from ZK devices and sends notifications via LINE Notify without requiring a database. It supports logging data to files and monitoring device status.
+
+## System Requirements
+- Python 3.x
+- Libraries: `colorama`, `requests`, `zk`, `pyinstaller`
+- Connection to ZK devices via IP and Port
+- LINE Notify Token and Target User ID
+
+## Installation
+1. Install Python 3.x
+2. Install required libraries: pip install -r requirements.txt
+3. Edit the code:
+- Add ZK device IP and Port in `__devices__`
+- Set `LINE_NOTIFY_TOKEN` and `TARGET_USER_ID` in the designated sections
+
+## Usage
+1. Run the program: python main2.py
+2. Program commands:
+- `v`: Open VS Code
+- `o`: Open current folder
+- `l`: Open log folder
+- `h`: Show help message
+- `p`: Display device status
+- `s`: Toggle continuous status monitoring
+- `r`: Manually reconnect devices
+- `q`: Quit the program
+- `c`: Clear the screen
+
+## Building Executable with PyInstaller
+1. Run the command: pyinstaller --onefile script.py
+2. The executable will be in the `dist` folder
+
+## Setting Up Task Scheduler
+
+### On Windows
+1. Open Task Scheduler
+2. Create a new Task:
+- General: Name it, e.g., "Run ZK Script"
+- Trigger: Set start time (e.g., daily at 8:00 AM)
+- Action: Select "Start a program"
+  - Program/script: Specify path to `python.exe` or the `.exe` file from PyInstaller
+  - Add arguments: `script.py` (if using Python)
+  - Start in: Specify the script’s folder
+3. Save and test
+
+### On Linux
+1. Open Terminal
+2. Edit crontab: crontab -e
+3. Add a line (e.g., run daily at 8:00 AM): 0 8 * * * /usr/bin/python3 /path/to/script.py
+Or if using a PyInstaller `.exe`: 0 8 * * * /path/to/script
+4. Save and verify with: crontab -l
+
+## Note
+- This code is not intended for sale.
+- Anyone who sells this code without permission will face legal action.
