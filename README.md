@@ -61,7 +61,11 @@
 - โค้ดนี้ไม่ได้มีไว้เพื่อการจำหน่าย
 - ผู้ใดที่นำโค้ดนี้ไปจำหน่ายโดยไม่ได้รับอนุญาต จะถูกดำเนินคดีตามกฎหมาย
 ---
-
+## สนับสนุนค่ากาแฟ
+หากคุณชื่นชอบโปรเจกต์นี้ สามารถสนับสนุนค่ากาแฟได้ที่:
+หมายเลขบัญชี: 0288607230
+ธนาคาร: กสิกรไทย
+ชื่อบัญชี: Kridsadar Ngankhayan
 
 
 #### English
@@ -123,3 +127,10 @@ Or if using a PyInstaller `.exe`: 0 8 * * * /path/to/script
 ## Note
 - This code is not intended for sale.
 - Anyone who sells this code without permission will face legal action.
+
+## Support a Coffee
+If you like this project, you can support me by buying a coffee:
+
+Account Number: 0288607230
+Bank: Kasikorn Thai
+Account Name: Kridsadar Ngankhayan
